@@ -14,6 +14,7 @@ const QuizScreen = (props) => {
     
           // Store the data in AsyncStorage
           await AsyncStorage.setItem("api_fetch", JSON.stringify(data));
+          
     
         } catch (err) {
           console.log(err);
@@ -61,7 +62,7 @@ const QuizScreen = (props) => {
     </Picker>
     <Button title="Create Quiz" onPress={() => {
           storePersonData();
-          props.navigation.navigate("QuizScreen");
+          props.navigation.navigate("Details");
         }} />
     </>
 

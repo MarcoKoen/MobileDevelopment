@@ -4,7 +4,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const DisplayQuiz = (props) => {
   const [data, setData] = useState(null);
-
+  console.log(props)
   // Call getData() function when the component mounts
   useEffect(() => {
     getData();
@@ -38,4 +38,4 @@ const DisplayQuiz = (props) => {
   );
 };
 
-export default DetailsScreen;
+export default DisplayQuiz;
